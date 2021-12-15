@@ -3,48 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat energy</title>
+  <link rel="stylesheet" href="css/style.css.map">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <div class="container">
       <div class="page-header__top">
-        <a class="page-header__logo">
-          <img src="img/logomobile.svg" width="33" height="37" alt="Кеи энерджи»">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo-mobile.png" width="33" height="37" alt="Кеи энерджи»">
         </a>
         <svg class="page-header__title" width="101" height="18">
           <use xlink:href=""></use>
         </svg>
         <button class="page-header__toggle" type="button">
-          <svg class="page-header__main--icon page-header__main-icon--open">
+          <svg class="page-header__main-icon page-header__main-icon-open">
             <use xlink:href=""></use>
           </svg>
-          <svg class="page-header__main--icon page-header__main-icon--close">
+          <svg class="page-header__main-icon page-header__main-icon-close">
             <use xlink:href=""></use>
           </svg>
         </button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="site-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
-                Каталог продукта
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav class="main-nav main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html" class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог продукта
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="title-block">
@@ -58,33 +58,33 @@
       <div class="container">
         <form action="https://echo.htmlacademy.ru" class="selection__form fields" method="get">
           <div class="fields__wrapper">
-            <div class="fields__set fields__set--personal">
-              <div class="fields__block">
+            <fieldset class="fields__set fields__set--personal">
+              <legend class="fields__block">
                 <label for="catname" class="fields__label">Имя:*</label>
-                <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
-              </div>
-              <div class="fields__block">
+                <input type="number" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
+              </legend>
+              <legend class="fields__block">
                 <label for="weight" class="fields__label">Вес (кг):*</label>
-                <input type="text" class="fields__textfield" id="weight" name="weight" placeholder="7">
-              </div>
-              <div class="fields__block">
+                <input type="number" class="fields__textfield" id="weight" name="weight" placeholder="7">
+              </legend>
+              <legend class="fields__block">
                 <label for="age" class="fields__label">Возраст (лет):</label>
-                <input type="text" class="fields__textfield" id="age" name="age" placeholder="7">
-              </div>
-            </div>
+                <input type="number" class="fields__textfield" id="age" name="age" placeholder="7">
+              </legend>
+            </fieldset>
             <div class="fields__set fields__set--program">
               <ul class="fields__list program-type-list">
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="">
-                  <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+                  <label for="slim" class="program-type-list__label" >Похудение</label>
                 </li>
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
-                  <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+                  <label for="mass" class="program-type-list__label" >Набор массы</label>
                 </li>
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
-                  <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                  <label for="advice" class="program-type-list__label" >Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
